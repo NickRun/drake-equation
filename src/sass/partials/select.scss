@@ -1,0 +1,23 @@
+$select_border_color: #ddd;
+$select_hover_border_color: darken($select_border_color, 10%);
+$select_active_border_color: blue;
+
+.select {
+	//
+	.value  {
+		padding:8px;
+		margin-bottom:5px;
+		padding:8px;
+		border:1px solid $select_border_color;
+		border-radius:5px;
+		cursor:pointer;
+		//
+		&:hover {
+			border-color:$select_hover_border_color;
+		}
+		//
+		&.active {
+			border-color:$select_active_border_color!important;
+		}
+	}
+}

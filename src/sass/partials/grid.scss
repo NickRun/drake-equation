@@ -1,0 +1,27 @@
+.g-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.g-wrapper, .row{
+	@include clearfix();
+}
+
+[class*='g-col-'] {
+	float: left;
+	padding: 10px;
+	width: 100%;
+	min-height: 1px; 
+}
+
+@include mq(md) {
+    .g-wrapper {      
+		width: 100%;
+		max-width: $grid-max-width;     
+	}
+    @for $i from 1 through $grid-columns {      
+		.g-col-#{$i} {         
+		    width: 100% / $grid-columns * $i;   
+		}            
+    }
+}

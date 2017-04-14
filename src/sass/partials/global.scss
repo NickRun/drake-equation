@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.instructions {
+  text-align:left;
+  padding:10px;
+  border:1px solid #333;
+  border-radius:5px;
+  margin:30px 10px 10px 10px;
+  //
+  ol li {
+    margin-top:10px;
+  }
+}
